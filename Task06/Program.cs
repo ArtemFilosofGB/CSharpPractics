@@ -3,13 +3,15 @@
 // -3 -> нет
 // 7 -> нет
 
+//using Internal;
+
 Console.WriteLine("Введите целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number % 2 == 0)
 {
-    Console.WriteLine("Введено четное число");
+    Console.WriteLine("Да");//Console.WriteLine("Введено четное число");
 }
 else
 {
-    Console.WriteLine("Введено нечётное число");
+   Console.WriteLine("Нет");// Console.WriteLine("Введено нечётное число");
 }

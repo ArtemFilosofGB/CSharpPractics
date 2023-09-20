@@ -17,7 +17,7 @@ if (number1 == number2 && number1 == number3)
 else
 {
     int max = number1;
-    if (number2 > number1)
+    if (number2 > max)
     {
         max = number2;
     }

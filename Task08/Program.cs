@@ -14,7 +14,7 @@ if (number < 0)
 else
 {
     Console.Write("Все чётные числа от 1 до N:");
-    while (index < number)
+    while (index <= number)
     {
         if (index % 2 == 0)
         {
