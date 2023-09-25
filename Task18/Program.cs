@@ -13,10 +13,10 @@ int GetUserInput(string str)
 
 string RangeCoordinats(int quater)
 {
-    if (quater == 1) return "x > 0 y > 0";
-    if (quater == 2) return "x < 0 && y > 0";
-    if (quater == 3) return "x < 0 && y < 0";
-    if (quater == 4) return "x > 0 && y < 0";
+    if (quater == 1) return "x > 0, y > 0";
+    if (quater == 2) return "x < 0, y > 0";
+    if (quater == 3) return "x < 0, y < 0";
+    if (quater == 4) return "x > 0, y < 0";
 
     return null;
 

@@ -4,7 +4,6 @@
 // точка.
 
 
-
 int GetUserInput(string str)
 {
     Console.WriteLine(str);
@@ -27,7 +26,15 @@ int xCoordinate = GetUserInput("Ведите х:");
 int yCoordinate = GetUserInput("Ведите y:");
 int quater = Quater(xCoordinate, yCoordinate);
 
+//Вывод координатной сетки
+Console.WriteLine("2|1");
+Console.WriteLine("---");
+Console.WriteLine("3|4");
+
 string result = quater > 0
                 ? $"Указаные коордитаты соотвествуюи четверти {quater}"
                 : $"Введены некоректные координаты";
+                //Если quater > 0 то ? иначе : 
+                //Записать в string result
+                
 Console.WriteLine(result);
