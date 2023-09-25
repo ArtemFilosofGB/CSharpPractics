@@ -22,10 +22,11 @@ public class Answer
         Console.WriteLine($"{count*count*count}");
         count++;
     }
-    // Console.WriteLine($"*/");
+    Console.WriteLine($"*/");
     }
 
-  // Не удаляйте и не меняйте метод Main!       static public void Main(string[] args) {
+  // Не удаляйте и не меняйте метод Main! 
+      static public void Main(string[] args) {
         int N;
 
         if (args.Length >= 1) {
