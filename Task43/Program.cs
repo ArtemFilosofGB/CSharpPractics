@@ -8,9 +8,10 @@
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
 
+
 int GetUserInput(string str)
 {
-    Console.WriteLine(str);
+    Console.Write(str);
     int num = Convert.ToInt32(Console.ReadLine());
     return num;
 }
@@ -31,6 +32,12 @@ double k1 = GetUserInput("Введите k1:");
 double b1 = GetUserInput("Введите b1:");
 double k2 = GetUserInput("Введите k2:");
 double b2 = GetUserInput("Введите b2:");
+if (k1==k2)
+{
+    Console.WriteLine("Прямые паралельны!");
+    return;
+}
 double[] intersection = Intersection(k1,b1,k2,b2);
+
 Console.WriteLine($"Пересечение в ({intersection[0]:F1}:{intersection[1]:F1})");
 
