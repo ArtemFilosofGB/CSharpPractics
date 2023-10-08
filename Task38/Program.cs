@@ -28,8 +28,6 @@ void PrintArrayDouble(double[] arr)
     Console.Write("]");
 }
 
-//int 4 байта, double 8 байт создаём метод для определения позиции макс и мин элемента
-
 double MaxElementDoubleArr(double[] arr)
 {
    
@@ -62,7 +60,7 @@ double MinElementDoubleArr(double[] arr)
     return min;
 }
 
-double DoubleDiferents(double num1, double num2)
+double DoubleArrDiferents(double num1, double num2)
 {
     return num1-num2;
 }
@@ -74,4 +72,4 @@ Console.Write(" => ");
 double maxDoubleArr = MaxElementDoubleArr(array);
 double minDoubleArr = MinElementDoubleArr(array);
 
-Console.Write($"{maxDoubleArr:F1} - {minDoubleArr:F1} = {DoubleDiferents(maxDoubleArr,minDoubleArr):F1}");
+Console.Write($"{maxDoubleArr:F1} - {minDoubleArr:F1} = {DoubleArrDiferents(maxDoubleArr,minDoubleArr):F1}");
