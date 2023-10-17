@@ -16,8 +16,8 @@ if(number < 1)
 NaturalsNumbers(number);
 
 void NaturalsNumbers(int num)
-{
+{   int i = num-1;
     if (num == 0) return;
-    Console.Write($"{num} ");
+    Console.Write($"{num-i} ");
     NaturalsNumbers(num - 1);
 }
