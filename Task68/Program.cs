@@ -11,10 +11,27 @@ int Ackermann(int m, int n)
         return Ackermann(m - 1, 1);
     else
         return Ackermann(m - 1, Ackermann(m, n - 1));
+
+    //rerturn (m == 0)? n +1 :
+    //        (n == 0) ? Ackermann(m - 1, 1) :
+    //                    Ackermann(m - 1, Ackermann(m, n - 1));
+
 }
 
 
-int m = 3;
-int n = 2;
-int result = Ackermann(m, n);
-Console.WriteLine($"Ackermann({m}, {n}) = {result}");
+for (int m = 0; m <= 5; m++)
+{
+    for (int n = 0; n <= 5; n++)
+    {
+        int result = Ackermann(m, n);
+        Console.WriteLine($"Ackermann({m}, {n}) = {result}");
+    }
+    Console.WriteLine();
+}
+
+// Ackermann(3, 4) = 125
+// Ackermann(3, 5) = 253
+
+//Ackermann(4, 0) = 13
+// Stack overflow.
+
