@@ -4,7 +4,6 @@
 // M = 1; N = 15 -> 120
 // M = 4; N = 8. -> 30
 
-
 int GetUserInput(string str)
 {
     Console.WriteLine(str);
@@ -26,7 +25,6 @@ int NaturalNumbersSum(int m, int n)
     {
         return NaturalNumbersSum(n, m); //для случая когда m >n в первоначальном вызове
     }
-
 }
 
 int m = GetUserInput("Введите М");

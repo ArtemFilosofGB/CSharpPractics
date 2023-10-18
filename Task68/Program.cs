@@ -15,9 +15,7 @@ int Ackermann(int m, int n)
     //rerturn (m == 0)? n +1 :
     //        (n == 0) ? Ackermann(m - 1, 1) :
     //                    Ackermann(m - 1, Ackermann(m, n - 1));
-
 }
-
 
 for (int m = 0; m <= 5; m++)
 {
@@ -31,7 +29,6 @@ for (int m = 0; m <= 5; m++)
 
 // Ackermann(3, 4) = 125
 // Ackermann(3, 5) = 253
-
 //Ackermann(4, 0) = 13
 // Stack overflow.
 
