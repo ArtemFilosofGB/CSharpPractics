@@ -1,4 +1,5 @@
 # Знакомство с языками программирования (семинары) C#
+CSharp practics
 
 *Перед началом семинара необходимо установить:
 Visual Studio Code - https:ode.visualstudio.com/*
